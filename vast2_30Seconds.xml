@@ -1,0 +1,51 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0">
+  <Ad id="static">
+    <InLine>
+      <AdSystem>test</AdSystem>
+      <AdTitle>Vast2-30Second Spinning Vinyl Video</AdTitle>
+      <Error>
+        <![CDATA[https://test-tracking-vast-error.1?test]]>
+      </Error>
+      <Impression>
+        <![CDATA[https://test-vast-impression.1?test]]>
+      </Impression>
+      <Creatives>
+        <Creative id="1" sequence="1">
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <TrackingEvents>
+              <Tracking event="start">
+                <![CDATA[https://test-tracking.start?test]]>
+              </Tracking>
+              <Tracking event="firstQuartile">
+                <![CDATA[https://test-tracking.first-quartile?test]]>
+              </Tracking>
+              <Tracking event="midpoint">
+                <![CDATA[https://test-tracking.midpoint?test;]]>
+              </Tracking>
+              <Tracking event="thirdQuartile">
+                <![CDATA[https://test-tracking.third-quartile?test]]>
+              </Tracking>
+              <Tracking event="complete">
+                <![CDATA[https://test-tracking.complete?test]]>
+              </Tracking>
+              <Tracking event="mute">
+                <![CDATA[https://test-tracking.mute?test]]>
+              </Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[https://test-clickthrough.com?test]]>
+              </ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile type="video/mp4" delivery="progressive" bitrate="1200" width="640" height="360">
+                <![CDATA[https://ia800305.us.archive.org/1/items/RecordBackground/RecordBackgroundFinal.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
